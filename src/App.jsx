@@ -18,7 +18,7 @@ function App() {
     // Use the API key variable in your URL
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${country}`
+        `https://api.weatherapi.com/v1/current.json?key=${WEATHER_API_KEY}&q=${country}`
       )
       .then((res) => {
         setData(res.data);
